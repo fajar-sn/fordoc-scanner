@@ -1,0 +1,1 @@
+views_file_location = "./fordoc_scanner/views"

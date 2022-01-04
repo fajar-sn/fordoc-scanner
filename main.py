@@ -10,3 +10,4 @@ if __name__ == "__main__":
     main_window.ui.show()
 
     sys.exit(app.exec())
+    

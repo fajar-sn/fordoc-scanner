@@ -37,15 +37,15 @@
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>385</width>
-               <height>428</height>
+               <width>386</width>
+               <height>431</height>
               </rect>
              </property>
              <layout class="QGridLayout" name="gridLayout">
               <item row="0" column="0">
                <widget class="QLabel" name="image_label">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(32, 255, 255);</string>
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                 </property>
                 <property name="text">
                  <string>Photo</string>
@@ -76,7 +76,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton">
+             <widget class="QPushButton" name="extract_image_button">
               <property name="text">
                <string>Ekstrak Gambar</string>
               </property>
@@ -88,6 +88,18 @@
         </item>
         <item row="0" column="1">
          <layout class="QGridLayout" name="gridLayout_5">
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="blood_group_line_edit"/>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLineEdit" name="religion_line_edit"/>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="birth_date_line_edit"/>
+          </item>
+          <item row="11" column="1">
+           <widget class="QLineEdit" name="marriage_status_line_edit"/>
+          </item>
           <item row="14" column="0">
            <widget class="QLabel" name="label_16">
             <property name="text">
@@ -126,9 +138,6 @@
             </property>
            </widget>
           </item>
-          <item row="11" column="1">
-           <widget class="QComboBox" name="marriage_status_combo_box"/>
-          </item>
           <item row="8" column="0">
            <widget class="QLabel" name="label_10">
             <property name="text">
@@ -149,24 +158,12 @@
           <item row="12" column="1">
            <widget class="QLineEdit" name="job_line_edit"/>
           </item>
-          <item row="10" column="1">
-           <widget class="QComboBox" name="religion_combo_box"/>
-          </item>
-          <item row="4" column="1">
-           <widget class="QComboBox" name="gender_combo_box"/>
-          </item>
-          <item row="13" column="1">
-           <widget class="QComboBox" name="citizenship_combo_box"/>
-          </item>
           <item row="9" column="0">
            <widget class="QLabel" name="label_11">
             <property name="text">
              <string>Kecamatan</string>
             </property>
            </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QDateEdit" name="birthdate_date_edit"/>
           </item>
           <item row="8" column="1">
            <widget class="QLineEdit" name="village_line_edit"/>
@@ -197,9 +194,6 @@
              <string>Golongan Darah</string>
             </property>
            </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QComboBox" name="blood_group_combo_box"/>
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_3">
@@ -245,6 +239,12 @@
             </property>
            </widget>
           </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="gender_line_edit"/>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLineEdit" name="citizenship_line_edit"/>
+          </item>
          </layout>
         </item>
        </layout>
@@ -252,7 +252,7 @@
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QTextEdit" name="dummy_text_edit"/>
+         <widget class="QTableView" name="tableView"/>
         </item>
         <item>
          <widget class="QPushButton" name="save_table_button">
